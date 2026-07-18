@@ -1,0 +1,62 @@
+[
+  {
+    "id": "combo-35kva",
+    "title": "3.5kVA Eco Hybrid Bundle",
+    "category": "combos",
+    "badge": "Popular",
+    "badgeColor": "bg-blue-100 text-blue-800",
+    "image": "https://images.unsplash.com/photo-1620038650444-245df33dc786?auto=format&fit=crop&w=600&q=80",
+    "specs": [
+      "3.5kVA Pure Sine Wave Hybrid Inverter",
+      "1x 24V 200Ah Lithium LiFePO4 Battery",
+      "4x 450W Mono Solar Panels",
+      "AC/DC Protection Box & Installation Accessories"
+    ],
+    "price": "₦1,650,000"
+  },
+  {
+    "id": "combo-5kva",
+    "title": "5kVA Premium Power Bundle",
+    "category": "combos",
+    "badge": "Best Value",
+    "badgeColor": "bg-emerald-100 text-emerald-800",
+    "image": "",
+    "specs": [
+      "5kVA Smart Hybrid Inverter (Parallel Capable)",
+      "1x 48V 100Ah Wall-Mount Lithium Battery",
+      "6x 550W High-Efficiency Mono Panels",
+      "Complete Engineering Installation & Earthing"
+    ],
+    "price": "₦2,850,000"
+  },
+  {
+    "id": "inv-5kva",
+    "title": "5kVA De eye Hybrid Inverter",
+    "category": "individual",
+    "badge": "Component",
+    "badgeColor": "bg-slate-100 text-slate-800",
+    "image": "https://",
+    "specs": [
+      "Dual MPPT Tracker Built-in",
+      "Pure Sine Wave Output",
+      "Compatible with Lithium & Lead-Acid Batteries",
+      "Smart LCD Display monitoring"
+    ],
+    "price": "₦780,000"
+  },
+  {
+    "id": "bat-lithium",
+    "title": "48V 100Ah Lithium LiFePO4 Battery",
+    "category": "individual",
+    "badge": "Storage",
+    "badgeColor": "bg-slate-100 text-slate-800",
+    "image": "https://",
+    "specs": [
+      "6,000+ Deep Charge Cycles Capacity",
+      "Built-in Intelligent BMS Protection",
+      "Wall-mountable, compact footprint",
+      "5-Year Manufacturer Warranty"
+    ],
+    "price": "₦1,200,000"
+  }
+]

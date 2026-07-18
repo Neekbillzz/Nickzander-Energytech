@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nickzander Energy Techsolutions | Premium Solar Systems</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/Nzenergy/app.js" defer></script>
+    <!-- FontAwesome for clean iconography -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+    <!-- GLOBAL NAVIGATION HEADER -->
+    <header
+      class="bg-white border-b border-slate-100 sticky top-0 z-50 shadow-sm"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <div
+          class="flex items-center space-x-2 cursor-pointer"
+          onclick="navigateTo('home')"
+        >
+          <!-- <div class="bg-amber-500 text-white p-2 rounded-lg shadow-md">
+          <i class="fa-solid fa-solar-panel text-xl"></i>
+        </div> -->
+          <img
+            src="https://res.cloudinary.com/deug7yxlv/image/upload/f_auto,q_auto,w_60,h_40,c_fill/v1782683813/copy_of_nzenergytech_logopng1_z3sebh.jpg"
+            alt=""
+          />
+          <span
+            class="font-black text-xl tracking-tight text-slate-900 uppercase"
+            >Nickzander
+            <span
+              class="text-amber-500 font-medium text-sm block tracking-wide normal-case -mt-1"
+              >EnergyTech Solutions</span
+            ></span
+          >
+        </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+          <button
+            onclick="navigateTo('home')"
+            id="nav-home"
+            class="nav-link hover:text-amber-500 transition py-2"
+          >
+            Home
+          </button>
+          <button
+            onclick="navigateTo('products')"
+            id="nav-products"
+            class="nav-link hover:text-amber-500 transition py-2"
+          >
+            Products & Combos
+          </button>
+          <button
+            onclick="navigateTo('contact')"
+            id="nav-contact"
+            class="nav-link hover:text-amber-500 transition py-2"
+          >
+            Contact Us
+          </button>
+        </nav>
+
+        <div class="hidden md:flex">
+          <a
+            href="tel:+2348000000000"
+            class="inline-flex items-center space-x-2 bg-slate-900 text-white px-4 py-2.5 rounded-lg font-semibold hover:bg-slate-800 transition shadow-sm text-sm"
+          >
+            <i class="fa-solid fa-phone text-amber-400"></i>
+            <span>Call Sales</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          onclick="toggleMobileMenu()"
+          class="md:hidden text-slate-700 focus:outline-none p-2"
+        >
+          <i id="menu-icon" class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-inner"
+      >
+        <button
+          onclick="
+            navigateTo('home');
+            toggleMobileMenu();
+          "
+          class="block w-full text-left font-semibold text-slate-700 py-2 border-b border-slate-50"
+        >
+          Home
+        </button>
+        <button
+          onclick="
+            navigateTo('products');
+            toggleMobileMenu();
+          "
+          class="block w-full text-left font-semibold text-slate-700 py-2 border-b border-slate-50"
+        >
+          Products & Combos
+        </button>
+        <button
+          onclick="
+            navigateTo('contact');
+            toggleMobileMenu();
+          "
+          class="block w-full text-left font-semibold text-slate-700 py-2 border-b border-slate-50"
+        >
+          Contact Us
+        </button>
+        <a
+          href="tel:+2348056968084"
+          class="flex items-center justify-center space-x-2 bg-amber-500 text-white w-full py-3 rounded-lg font-bold shadow"
+        >
+          <i class="fa-solid fa-phone"></i>
+          <span>Call Now</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- MULTI-PAGE CONTAINER ROUTER -->
+    <main class="flex-grow">
+      <!-- 1. HOME VIEW -->
+      <section id="view-home" class="page-view">
+        <!-- Hero Section -->
+        <div
+          class="bg-gradient-to-br from-slate-900 via-slate-800 to-amber-950 text-white py-20 px-4 sm:px-6 lg:px-8 text-center md:text-left relative overflow-hidden"
+        >
+          <div
+            class="max-w-7xl mx-auto md:flex items-center justify-between gap-12 relative z-10"
+          >
+            <div class="max-w-2xl space-y-6">
+              <span
+                class="bg-amber-500/10 text-amber-400 px-3 py-1 rounded-full text-sm font-bold border border-amber-500/20 uppercase tracking-wider"
+                >Reliable Solar Engineering</span
+              >
+              <h1
+                class="text-4xl sm:text-5xl font-black tracking-tight leading-tight"
+              >
+                Say Goodbye to Power Outages Forever.
+              </h1>
+              <p class="text-slate-300 text-lg leading-relaxed">
+                We engineer and install premium, long-lasting hybrid inverter
+                systems, lithium storage banks, and high-efficiency solar arrays
+                tailored perfectly to your home or office load footprint.
+              </p>
+              <div
+                class="pt-4 flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+              >
+                <button
+                  onclick="navigateTo('products')"
+                  class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-8 py-4 rounded-xl transition shadow-lg text-base"
+                >
+                  Browse Solar Bundles
+                </button>
+                <button
+                  onclick="navigateTo('contact')"
+                  class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl transition text-base"
+                >
+                  Request Free Quote
+                </button>
+              </div>
+            </div>
+            <div
+              class="hidden md:block w-full max-w-md bg-white/5 backdrop-blur-md border border-white/10 p-6 rounded-2xl shadow-2xl"
+            >
+              <h3 class="text-xl font-bold text-amber-400 mb-4">
+                <i class="fa-solid fa-bolt mr-2"></i>Why Nickzander?
+              </h3>
+              <ul class="space-y-4 text-slate-300">
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i
+                  ><span
+                    >Premium grade Lithium LiFePO4 cells with 5+ year warranty
+                    cycles.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i
+                  ><span
+                    >Exact load mathematical profiling to prevent system
+                    overloading.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <i class="fa-solid fa-circle-check text-emerald-400 mt-1"></i
+                  ><span
+                    >Rapid support and remote monitoring capabilities
+                    post-deployment.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature/Intro Section -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">
+            Simple Energy Solutions Built For You
+          </h2>
+          <p class="text-slate-500 mt-2 max-w-xl mx-auto">
+            Skip the complexity. Choose one of our pre-configured power packages
+            or shop specialized component installations.
+          </p>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto"
+          >
+            <div
+              onclick="navigateTo('products')"
+              class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer group text-left"
+            >
+              <div
+                class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 font-bold text-xl mb-4 group-hover:bg-amber-500 group-hover:text-white transition"
+              >
+                <i class="fa-solid fa-boxes-packing"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800">
+                Pre-Configured Combos
+              </h3>
+              <p class="text-slate-500 mt-2 text-sm">
+                Perfect complete systems including panels, inverters, smart
+                lithium energy storage, and full expert engineering assembly
+                layout.
+              </p>
+              <span
+                class="text-amber-600 font-bold text-sm mt-4 inline-block group-hover:translate-x-1 transition-transform"
+                >View Combos &rarr;</span
+              >
+            </div>
+            <div
+              onclick="navigateTo('products')"
+              class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition cursor-pointer group text-left"
+            >
+              <div
+                class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 font-bold text-xl mb-4 group-hover:bg-blue-500 group-hover:text-white transition"
+              >
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3 class="text-xl font-bold text-slate-800">
+                Individual Hardware
+              </h3>
+              <p class="text-slate-500 mt-2 text-sm">
+                Upgrading existing systems? View our standalone line-up of smart
+                tier-1 hybrid inverters, solar panels, and surge protection
+                arrays.
+              </p>
+              <span
+                class="text-blue-600 font-bold text-sm mt-4 inline-block group-hover:translate-x-1 transition-transform"
+                >View Components &rarr;</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. PRODUCTS VIEW -->
+      <section
+        id="view-products"
+        class="page-view hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+      >
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <h1 class="text-4xl font-black text-slate-900 tracking-tight">
+            Our Product Catalog
+          </h1>
+          <p class="text-slate-500 mt-2">
+            Transparent pricing. No hidden fees. Click any bundle or standalone
+            unit to instantly speak to an Engineer regarding deployment.
+          </p>
+        </div>
+
+        <!-- Navigation Category Filtering Tabs -->
+        <div class="flex justify-center mb-10">
+          <div class="bg-slate-200/60 p-1.5 rounded-xl flex space-x-2">
+            <button
+              id="filter-all"
+              onclick="filterCatalog('all')"
+              class="px-5 py-2.5 rounded-lg font-bold text-sm transition-all shadow-sm bg-white text-slate-900"
+            >
+              All Offers
+            </button>
+            <button
+              id="filter-combos"
+              onclick="filterCatalog('combos')"
+              class="px-5 py-2.5 rounded-lg font-bold text-sm transition-all text-slate-600 hover:text-slate-900"
+            >
+              Complete Combos
+            </button>
+            <button
+              id="filter-individual"
+              onclick="filterCatalog('individual')"
+              class="px-5 py-2.5 rounded-lg font-bold text-sm transition-all text-slate-600 hover:text-slate-900"
+            >
+              Single Units
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Catalog Container Grid -->
+        <div
+          id="catalog-grid"
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Dynamic content injected here via vanilla JS lifecycle hooks -->
+        </div>
+      </section>
+
+      <!-- 3. CONTACT VIEW -->
+      <section
+        id="view-contact"
+        class="page-view hidden max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 max-w-5xl mx-auto">
+          <!-- Information Card Section -->
+          <div class="lg:col-span-2 space-y-8">
+            <div>
+              <h1 class="text-4xl font-black text-slate-900 tracking-tight">
+                Let's Discuss Your Energy Layout.
+              </h1>
+              <p class="text-slate-500 mt-3 leading-relaxed">
+                Reach out directly via your favorite communication channel. Our
+                response turnaround profile for sizing inquiries is usually
+                under 30 minutes during work hours.
+              </p>
+            </div>
+
+            <div class="space-y-4">
+              <a
+                href="https://wa.me/2348056968084"
+                target="_blank"
+                class="flex items-center gap-4 bg-white border border-slate-100 p-4 rounded-xl shadow-sm hover:border-emerald-500 transition group"
+              >
+                <div
+                  class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 text-xl group-hover:bg-emerald-600 group-hover:text-white transition"
+                >
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-bold uppercase text-slate-400"
+                    >Instant Chat</span
+                  >
+                  <span class="font-bold text-slate-800">Chat on WhatsApp</span>
+                </div>
+              </a>
+              <a
+                href="tel:+2348056968084"
+                class="flex items-center gap-4 bg-white border border-slate-100 p-4 rounded-xl shadow-sm hover:border-blue-500 transition group"
+              >
+                <div
+                  class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 text-xl group-hover:bg-blue-600 group-hover:text-white transition"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <span class="block text-xs font-bold uppercase text-slate-400"
+                    >Hotline Sales</span
+                  >
+                  <span class="font-bold text-slate-800"
+                    >+234 (0) 809 757 3170</span
+                  >
+                </div>
+              </a>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200">
+              <span
+                class="block text-xs font-bold tracking-wider text-slate-400 uppercase mb-2"
+                >Connect Socially</span
+              >
+              <div class="flex space-x-3 text-slate-600">
+                <span
+                  class="font-bold text-slate-900 bg-slate-200/50 px-3 py-1.5 rounded-lg text-sm"
+                  ><i class="fa-solid fa-hashtag text-amber-500 mr-1"></i
+                  >@nzenergytech</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Static Functional Contact Form Box -->
+          <div
+            class="lg:col-span-3 bg-white p-8 rounded-2xl border border-slate-150 shadow-sm"
+          >
+            <h3 class="text-xl font-extrabold text-slate-900 mb-6">
+              Drop a Quote Message
+            </h3>
+            <form
+              id="contact-form"
+              class="space-y-5"
+            >
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase mb-2"
+                  >Your Full Name</label
+                >
+                <input
+                  type="text"
+                  required
+                  name="clientName"
+                  class="w-full border border-slate-200 bg-slate-50/50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition"
+                />
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    class="block text-xs font-bold text-slate-500 uppercase mb-2"
+                    >Phone / WhatsApp</label
+                  >
+                  <input
+                    type="tel"
+                    required
+                    name="whatsappPhone"
+                    class="w-full border border-slate-200 bg-slate-50/50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs font-bold text-slate-500 uppercase mb-2"
+                    >Property Type</label
+                  >
+                  <select
+                    class="w-full border border-slate-200 bg-slate-50/50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition"
+                  >
+                    <option>Residential Home</option>
+                    <option>Commercial Office</option>
+                    <option>Industrial Plant / Other</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label
+                  class="block text-xs font-bold text-slate-500 uppercase mb-2"
+                  >Describe Your Critical Loads (ACs, Fridges, Pumps,
+                  etc.)</label
+                >
+                <textarea
+                  rows="4"
+                  required
+                  name="criticalLoads"
+                  class="w-full border border-slate-200 bg-slate-50/50 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition"
+                  placeholder="List items you wish to back up with solar..."
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-4 rounded-xl shadow-md transition text-sm"
+              >
+                Submit Sizing Assessment
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- GLOBAL APPLICATION FOOTER -->
+    <footer
+      class="bg-slate-900 text-slate-400 text-sm mt-auto border-t border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:flex items-center justify-between gap-4"
+      >
+        <div class="text-center md:text-left">
+          <span class="font-bold text-white tracking-wider text-base uppercase"
+            >Nickzander EnergyTech Solutions</span
+          >
+          <p class="text-xs text-slate-500 mt-1">
+            &copy; 2026 All Rights Reserved. Engineered for excellence.
+          </p>
+        </div>
+        <div class="flex justify-center space-x-6 mt-4 md:mt-0 text-lg">
+          <a
+            href="https://www.instagram.com/nzenergytech/"
+            class="hover:text-amber-500 transition"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/nzenergytech/"
+            class="hover:text-amber-500 transition"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@nzenergytech"
+            class="hover:text-amber-500 transition"
+            ><i class="fa-brands fa-tiktok"></i
+          ></a>
+          <span
+            class="text-xs font-semibold text-slate-500 self-center bg-slate-800 px-2 py-1 rounded"
+            >@nzenergytech</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
